@@ -1,31 +1,6 @@
 # README
 # AI-Powered Phishing Detection Script
-# 
-# Overview:
-# This script implements a Naive Bayes classifier to detect phishing emails.
-# It processes a text file dataset ('phishing-2022.txt') and converts it into
-# a format suitable for training, then provides a function to classify new emails.
-# 
-# Author: Faith Dennis Osse
-# Date: July 30, 2025
-# 
-# Requirements:
-# - Python 3.x
-# - Libraries: pandas, numpy, scikit-learn
-# - Dataset: 'phishing-2022.txt' at 'C:\Users\faith\Downloads\phishing-2022.txt'
-#   (assumed to contain email text, one per line, with labels to be inferred or
-#    manually added; a temporary CSV will be created)
-# 
-# Usage:
-# 1. Ensure 'phishing-2022.txt' is at 'C:\Users\faith\Downloads\phishing-2022.txt'.
-# 2. Run the script: `python3 phishing_detector.py`
-# 3. Use the `classify_email(email_text)` function to test new emails.
-# 
-# Example:
-# sample_email = "Click here to claim your prize!"
-# result = classify_email(sample_email)
-# print(f"Classification: {result}")
-# 
+#  
 # Notes:
 # - The script assumes 'phishing-2022.txt' contains raw email text. It creates
 #   a temporary 'phishing_corpus.csv' with 'email' and 'label' columns (label 1
