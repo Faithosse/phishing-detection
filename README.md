@@ -47,11 +47,20 @@ Dataset-download : (![Data-download](screenshots/Dataset_download.png))
 
 
 
-Dataset Download:
+Step 3: Write the Script
+
+Script: phishing_detector.py implements a Naive Bayes classifier with an embedded README comment block, processing 'phishing-2022.txt'.
+Features: Text preprocessing, model training, prediction, and email classification function.
+
+Screenshots:
+
+
+Script command: (![Data-download](screenshots/gnome-command.png))
+
+script writing: (![Data-download](screenshots/script-gnome.png))
 
 Next Steps
-
-Develop and test the Python script.
+Run and test the Python script.
 Document results and upload to GitHub.
 
 Author
