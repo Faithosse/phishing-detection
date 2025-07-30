@@ -5,13 +5,17 @@ This project develops a machine learning-based phishing detection system using P
 Step 1: Development Environment Setup
 
 Environment: Kali Linux VM (VirtualBox).
+
 Tools Installed:
+
 Python 3, pip, Git (sudo apt install python3 python3-pip git -y).
 Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn (sudo apt install python3-pandas python3-numpy python3-sklearn python3-matplotlib python3-seaborn -y).
 
 
 Project Directory: /home/kali/phishing-detection with Git initialized.
+
 Screenshots:
+
 Terminal: kali_terminal.png
 Package Update: apt_update.png
 Tool Verification: install_verification.png
