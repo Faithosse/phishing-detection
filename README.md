@@ -54,14 +54,17 @@ Features: Text preprocessing, model training, prediction, and email classificati
 
 Screenshots:
 
-
 Script command: (![Data-download](screenshots/gnome-command.png))
 
 script writing: (![Data-download](screenshots/script-gnome.png))
 
-Next Steps
-Run and test the Python script.
-Document results and upload to GitHub.
+Step 4: Run/Test Script
+
+Test Results: Achieved accuracy of 1.00 on 15,140 samples on July 30, 2025, with 'utf-8-sig' encoding. Sample email "Click here to claim your prize!" classified as Phishing. Note: 100% accuracy suggests all data is labeled as phishing; consider adding legitimate emails for balanced testing.
+
+Screenshots:
+
+Script Test: (![script test](screenshots/script-test.png))
 
 Author
 Faith Dennis OsseAspiring cybersecurity professional with expertise in networking, cryptography, and vulnerability analysis. Connect on LinkedIn.
