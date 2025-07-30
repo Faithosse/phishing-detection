@@ -12,13 +12,12 @@ Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn (sudo apt install py
 
 Project Directory: /home/kali/phishing-detection with Git initialized.
 Screenshots:
-Terminal: 
-Package Update: 
-Tool Verification: 
-Library Installation: 
-Project Directory: 
-GitHub Setup: 
-Git Integration: 
+Package Update: (![kali update](screenshots/apt-update.png))
+Tool Verification: (![install-verification](screenshots/install_verification.png))
+Library Installation: (![Libararies_install](screenshots/libraries_installation.png))
+Project Directory: (![project-directory](screenshots/creating_project_directory.png))
+Library Verification Setup: (![verifying-library](screenshots/libraries_installation_verified.png))
+
 
 
 
