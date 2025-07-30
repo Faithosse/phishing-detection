@@ -37,7 +37,7 @@ Library Verification Setup: (![verifying-library](screenshots/libraries_installa
 
 Step 2: Obtain a Dataset
 
-Dataset: Enron Phishing Dataset downloaded from https://labs-repos.iit.demokritos.gr/balab/mails.php on July 30, 2025.
+Dataset: Enron Phishing Dataset downloaded from [https://labs-repos.iit.demokritos.gr/balab/mails.php](https://labs-repos.iit.demokritos.gr/balab/mails.php) on July 30, 2025.
 Details: Contains phishing and legitimate emails for training the Naive Bayes model.
 
 Screenshots:
