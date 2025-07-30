@@ -41,7 +41,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report
 
 # Preprocess text file to CSV (simplified assumption: all emails are phishing)
-with open(r'C:\Users\faith\Downloads\phishing-2022.txt', 'r', encoding='utf-8') as file:
+with open('phishing-2022.txt', 'r', encoding='utf-8-sig', errors='replace') as file:
     emails = file.readlines()
 emails = [email.strip() for email in emails if email.strip()]
 data = pd.DataFrame({'email': emails, 'label': 1})  # Label 1 for phishing
