@@ -1,3 +1,38 @@
+# README
+# AI-Powered Phishing Detection Script
+# 
+# Overview:
+# This script implements a Naive Bayes classifier to detect phishing emails.
+# It processes a text file dataset ('phishing-2022.txt') and converts it into
+# a format suitable for training, then provides a function to classify new emails.
+# 
+# Author: Faith Dennis Osse
+# Date: July 30, 2025
+# 
+# Requirements:
+# - Python 3.x
+# - Libraries: pandas, numpy, scikit-learn
+# - Dataset: 'phishing-2022.txt' at 'C:\Users\faith\Downloads\phishing-2022.txt'
+#   (assumed to contain email text, one per line, with labels to be inferred or
+#    manually added; a temporary CSV will be created)
+# 
+# Usage:
+# 1. Ensure 'phishing-2022.txt' is at 'C:\Users\faith\Downloads\phishing-2022.txt'.
+# 2. Run the script: `python3 phishing_detector.py`
+# 3. Use the `classify_email(email_text)` function to test new emails.
+# 
+# Example:
+# sample_email = "Click here to claim your prize!"
+# result = classify_email(sample_email)
+# print(f"Classification: {result}")
+# 
+# Notes:
+# - The script assumes 'phishing-2022.txt' contains raw email text. It creates
+#   a temporary 'phishing_corpus.csv' with 'email' and 'label' columns (label 1
+#   for phishing, 0 for legitimate; adjust preprocessing if labels are present).
+# - Adjust the file path if stored differently or move the file to the script
+#   directory for simplicity.
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -5,8 +40,15 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report
 
-# Load dataset (replace with your dataset path)
-data = pd.read_csv('phishing_corpus.csv')  # Assumes a CSV with 'email' and 'label' columns
+# Preprocess text file to CSV (simplified assumption: all emails are phishing)
+with open(r'C:\Users\faith\Downloads\phishing-2022.txt', 'r', encoding='utf-8') as file:
+    emails = file.readlines()
+emails = [email.strip() for email in emails if email.strip()]
+data = pd.DataFrame({'email': emails, 'label': 1})  # Label 1 for phishing
+data.to_csv('phishing_corpus.csv', index=False)
+
+# Load the processed dataset
+data = pd.read_csv('phishing_corpus.csv')
 X = data['email']
 y = data['label']
 
